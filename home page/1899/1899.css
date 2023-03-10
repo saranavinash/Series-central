@@ -1,0 +1,78 @@
+*{
+    color: rgb(45, 132, 172);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.background::after {
+    position: absolute;
+    content: "";
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    background-image: url("1899\ background.jpg");
+    opacity: 0.2;
+    background-color: black;
+    background-size: 100%;
+    border-radius: 15px;
+    z-index:-1;
+}
+
+.Episode-Names hr{
+    width:150px;
+    border: 10px;
+    border: 2px solid rgb(179, 138, 138, 0.9);
+}
+
+.Episode-Names {
+     display: flex;
+     width: 50%;
+     height: 550px;
+     margin: auto;
+     align-items: center; 
+     flex-direction: column;
+}
+
+.Episode-Names pre:hover span:hover{
+    color:rgba(216, 111, 12, 0.9);
+    cursor:pointer;
+}
+
+span {
+    font-size:larger
+}
+
+a {
+    text-decoration: none;
+}
+
+.files
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 59px;
+}
+
+.files video {
+    width: 500px;
+    height: 500px;
+}
+
+.files video:hover {
+    outline: 4px solid darkgray;
+}
+
